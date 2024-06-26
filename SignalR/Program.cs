@@ -51,6 +51,7 @@ namespace SignalR
             app.MapRazorPages();
 
             app.MapHub<UserHub>("/Hubs/userCount");
+            app.MapHub<DeathlyHallowHub>("/Hubs/deathlyhallow");
 
             app.Run();
         }
